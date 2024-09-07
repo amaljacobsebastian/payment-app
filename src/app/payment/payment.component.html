@@ -1,0 +1,23 @@
+<div class="payment-container">
+    <h1>Payment Page</h1>
+    <form (ngSubmit)="onSubmit()" #paymentForm="ngForm">
+      <div class="form-group">
+        <label for="accountName">Account Name</label>
+        <input type="text" id="accountName" required [(ngModel)]="payment.accountName" name="accountName" />
+      </div>
+      <div class="form-group">
+        <label for="accountNumber">Account Number</label>
+        <input type="text" id="accountNumber" required [(ngModel)]="payment.accountNumber" name="accountNumber" />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" required [(ngModel)]="payment.amount" name="amount" />
+      </div>
+      <div class="form-group">
+        <label for="bankCode">Bank Code</label>
+        <input type="text" id="bankCode" required [(ngModel)]="payment.bankCode" name="bankCode" />
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  
